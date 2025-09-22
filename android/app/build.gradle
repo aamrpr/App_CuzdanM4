@@ -1,7 +1,7 @@
 apply plugin: "com.android.application"
 apply plugin: "org.jetbrains.kotlin.android"
 apply plugin: "com.facebook.react"
-
+apply plugin: 'com.google.gms.google-services'
 /**
  * This is the configuration block to customize your React Native Android app.
  * By default you don't need to apply any configuration, just uncomment the lines you need.
@@ -84,13 +84,15 @@ android {
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
+        missingDimensionStrategy 'react-native-camera', 'general'
+        manifestPlaceholders = [googleMapsKey: "AIzaSyDzVLuxM-DRUJ3BMcz9aVVeBiQnVKMwHrw"]
     }
     signingConfigs {
         debug {
-            storeFile file('debug.keystore')
-            storePassword 'android'
-            keyAlias 'androiddebugkey'
-            keyPassword 'android'
+            storeFile file('cuzdan.keystore')
+            storePassword 'a514286_+'
+            keyAlias 'cuzsankey'
+            keyPassword 'a514286_+'
         }
     }
     buildTypes {
@@ -116,4 +118,9 @@ dependencies {
     } else {
         implementation jscFlavor
     }
+    implementation project(':react-native-vector-icons')
+    implementation "androidx.biometric:biometric:1.2.0-alpha04"
+    implementation project(':react-native-restart')
 }
+
+apply from: file("../../node_modules/react-native-vector-icons/fonts.gradle")

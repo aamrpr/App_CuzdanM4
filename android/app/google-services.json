@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "499298183333",
+    "project_id": "cuzdan-7c999",
+    "storage_bucket": "cuzdan-7c999.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:499298183333:android:7c4a8c45ece9be1733c54c",
+        "android_client_info": {
+          "package_name": "com.hemyanapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-CxGDo3OCoFvn9Ece_nZL0tlLPWCTN_4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
